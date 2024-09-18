@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Information | FASHION HUB</title>
+    <link rel="stylesheet" href="/assets/css/css/information.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Information</h1>
+        </header>
+
+        <!-- User Account Section -->
+        <section class="account-info">
+            <h2>Account Information</h2>
+            <div class="info-block">
+                <p><strong>Name:</strong> <span id="userName">John Doe</span></p>
+                <p><strong>Email:</strong> <span id="userEmail">johndoe@example.com</span></p>
+                <p><strong>Phone:</strong> <span id="userPhone">+123 456 7890</span></p>
+                <p><strong>Shipping Address:</strong> <span id="userAddress">123 Main St, Cityville, Country</span></p>
+                <button class="btn-edit" id="editInfoBtn">Edit Information</button>
+            </div>
+
+            <!-- Edit Information Form (Initially Hidden) -->
+            <div class="edit-form" id="editForm" style="display: none;">
+                <input type="text" id="editName" placeholder="Name">
+                <input type="email" id="editEmail" placeholder="Email">
+                <input type="text" id="editPhone" placeholder="Phone">
+                <input type="text" id="editAddress" placeholder="Address">
+                <button class="btn-save" id="saveInfoBtn">Save</button>
+                <button class="btn-cancel" id="cancelInfoBtn">Cancel</button>
+            </div>
+        </section>
+
+        <!-- Order History Section -->
+        <section class="order-history">
+            <h2>Order History</h2>
+            <div class="order-item">
+                <p><strong>Order #12345</strong></p>
+                <p><strong>Date:</strong> 2024-09-10</p>
+                <p><strong>Status:</strong> Delivered</p>
+                <button class="btn-view">View Order</button>
+            </div>
+            <div class="order-item">
+                <p><strong>Order #12346</strong></p>
+                <p><strong>Date:</strong> 2024-09-12</p>
+                <p><strong>Status:</strong> Shipped</p>
+                <button class="btn-view">View Order</button>
+            </div>
+        </section>
+
+        <!-- Payment Methods Section -->
+        <section class="payment-methods">
+            <h2>Payment Methods</h2>
+            <div class="info-block">
+                <p><strong>Credit Card:</strong> **** **** **** 1234</p>
+                <button class="btn-edit" id="managePaymentBtn">Manage Payment Methods</button>
+            </div>
+            <!-- Manage Payment Form (Initially Hidden) -->
+            <div class="payment-form" id="paymentForm" style="display: none;">
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="Expiry Date">
+                <input type="text" placeholder="CVV">
+                <button class="btn-save">Save Payment Method</button>
+                <button class="btn-cancel" id="cancelPaymentBtn">Cancel</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 FASHION HUB. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="/assets/js/info.js"></script>
+</body>
+</html>

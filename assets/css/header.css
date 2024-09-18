@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+}
+
+#badge {
+    position: absolute;
+    background-color: rgb(255, 30, 30);
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 14px;
+    top: 10px;
+    right: 94px;
+}
+
+#container {
+    background-color: white;
+    margin: auto;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 2fr 4fr 1fr 1fr;
+    font-family: 'Lato', sans-serif;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    position: fixed;
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 2px 6px rgba(60, 64, 67, 0.15);
+}
+
+#shopName {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+#shopName a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+#collection {
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#collection a {
+    text-decoration: none;
+    color: rgb(29, 29, 29);
+}
+
+.search {
+    padding: 12px;
+    color: rgb(29, 29, 29);
+    position: absolute;
+}
+
+#input {
+    width: 35em;
+    height: 3em;
+    padding: 2px 50px;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    border-radius: 5px;
+}
+
+#input::placeholder {
+    font-weight: bold;
+}
+
+#input:focus {
+    outline: none;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+
+#login a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(29, 29, 29);
+}
+
+.addedToCart {
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+}
+
+.userIcon {
+    font-size: 35px;
+}
+
+@media(max-width: 1212px) {
+    #input {
+        width: 20em;
+    }
+}
+
+@media(max-width: 1090px) {
+    #container {
+        grid-template-columns: 1fr 2fr 0.5fr;
+    }
+
+    #search {
+        display: none;
+    }
+}
+
+@media(max-width: 650px) {
+    #input {
+        width: 100%;
+    }
+}
+
+@media(max-width: 550px) {
+    #badge {
+        right: 72px;
+        top: 18px;
+    }
+}
